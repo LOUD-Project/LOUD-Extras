@@ -340,7 +340,7 @@ UnitBlueprint {
         ToggleCaps = {
             RULEUTC_ShieldToggle = true,
         },
-        UnitName = 'Disruptor',
+        UnitName = 'Bushwhacker',
         UnitWeight = 1,
     },
     Intel = {

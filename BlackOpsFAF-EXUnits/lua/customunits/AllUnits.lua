@@ -4,7 +4,7 @@
 --**
 --**    Description:    For use with the Sorian AI
 --**
---**    Copyright © 2009 BrewLAN
+--**    Copyright ï¿½ 2009 BrewLAN
 --**
 --****************************************************************************
 
@@ -34,13 +34,13 @@ UnitList = {
             },
 
             T4LandExperimental3 = {
-                UEF = {'eel0401', 50}, -- Name: Disruptor (Experimental Harmonic Wave Generator)
+                UEF = {'eel0401', 50}, -- Name: Bushwhacker (Experimental Harmonic Wave Generator)
             },
             T4LandExperimental2 = {
-                UEF = {'eel0401', 50}, -- Name: Disruptor (Experimental Harmonic Wave Generator)
+                UEF = {'eel0401', 50}, -- Name: Bushwhacker (Experimental Harmonic Wave Generator)
             },
             T4LandExperimental1 = {
-                UEF = {'eel0401', 50}, -- Name: Disruptor (Experimental Harmonic Wave Generator)
+                UEF = {'eel0401', 50}, -- Name: Bushwhacker (Experimental Harmonic Wave Generator)
             },
 
 }
