@@ -8,7 +8,9 @@ selectable = true
 enabled = true
 exclusive = false
 ui_only = false
-requires = {}
+requires = {
+	"62e2j64a-53a2-y6sg-32h5-146as555a18u3",
+}
 requiresNames = {}
 conflicts = {}
 before = {}
