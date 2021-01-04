@@ -1,7 +1,7 @@
 name = "Rat's Unit Pack"
 uid = "55E98770-34A7-11EB-968E-RAT0FC2CA371"
 version = 0.1
-description = "Units scavenged from other mods. Maybe some custom ones one day. Balance not guaranteed."
+description = "Units scavenged from other mods. Maybe some custom ones one day. Balance not guaranteed. Not for use with anything but the LOUD mod."
 author = "Various Authors"
 icon = "/mods/RatUnits/icon.png"
 selectable = true
