@@ -36,7 +36,7 @@ GMEA410 = Class(TAirUnit) {
     OnCreate = function(self)
         TAirUnit.OnCreate(self)
         self.UnfoldAnim = CreateAnimator(self)
-        self.UnfoldAnim:PlayAnim('/mods/Antares Unit Pack/units/GMEA410/GMEA410_aunfold.sca')
+        self.UnfoldAnim:PlayAnim('/mods/RatUnits/units/GMEA410/GMEA410_aunfold.sca')
         self.UnfoldAnim:SetRate(0)
     end,
 

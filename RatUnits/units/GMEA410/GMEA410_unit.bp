@@ -141,7 +141,7 @@ UnitBlueprint {
         RegenRate = 10,
         Shield = {
             ImpactEffects = 'UEFShieldHit01',
-            OwnerShieldMesh = '/mods/Antares Unit Pack/units/GMEA410/GMEA410_PersonalShield_mesh',
+            OwnerShieldMesh = '/mods/RatUnits/units/GMEA410/GMEA410_PersonalShield_mesh',
             PersonalShield = true,
             RegenAssistMult = 60,
             ShieldEnergyDrainRechargeTime = 5,

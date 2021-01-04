@@ -1,0 +1,81 @@
+ProjectileBlueprint {
+    Audio = {
+        ExistLoop = Sound {
+            Bank = 'UELWeapon',
+            Cue = 'UEF_Nuke_Flight',
+            LodCutoff = 'DefaultLodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'Explosions',
+            Cue = 'Aeon_Nuke_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Explosions',
+            Cue = 'Aeon_Nuke_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        NukeExplosion = Sound {
+            Bank = 'Explosions',
+            Cue = 'Aeon_Nuke_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'AEON',
+        'PROJECTILE',
+        'INDIRECTFIRE',
+        'STRATEGIC',
+        'MISSILE',
+        'NOSPLASHDAMAGE',
+    },
+    Defense = {
+        Health = 50,
+        MaxHealth = 50,
+    },
+    Display = {
+        CameraFollowTimeout = 5,
+        CameraFollowsProjectile = true,
+        MeshBlueprint = '/projectiles/AIFQuantumWarhead01/AIFQuantumWarhead01_mesh.bp',
+        StrategicIconSize = 5,
+        UniformScale = 0.25,
+    },
+    Economy = {
+        BuildCostEnergy = 5750000,
+        BuildCostMass = 65000,
+        BuildTime = 950000,
+    },
+    General = {
+        Category = 'Missile',
+        EntityCategory = {
+            'AEON',
+            'PROJECTILE',
+            'INDIRECTFIRE',
+            'STRATEGIC',
+            'MISSILE',
+            'NOSPLASHDAMAGE',
+        },
+        Faction = 'AEON',
+    },
+    Interface = {
+        HelpText = 'AEON MIRV Nuclear Missile',
+    },
+    Physics = {
+    	DetonateBelowHeight = 90,
+    	Acceleration = 3,
+        CollideEntity = false,
+        CollideSurface = false,
+        DestroyOnWater = false,
+        InitialSpeed = 6,
+        Lifetime = 600,
+        MaxSpeed = 50,
+        RotationalVelocity = 100,
+        RotationalVelocityRange = 0,
+        TrackTarget = true,
+        TrackTargetGround = true,
+        TurnRate = 0,
+        UseGravity = false,
+        VelocityAlign = true,
+    },
+    StrategicIconName = '/textures/ui/common/game/unit-over/icon-nuke_bmp.dds',
+}

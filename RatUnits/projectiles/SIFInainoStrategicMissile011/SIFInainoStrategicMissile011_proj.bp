@@ -1,0 +1,91 @@
+ProjectileBlueprint {
+    Audio = {
+        ExistLoop = Sound {
+            Bank = 'UELWeapon',
+            Cue = 'UEF_Nuke_Flight',
+            LodCutoff = 'DefaultLodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'Impacts',
+            Cue = 'XSB2305_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'XSB2305_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        NukeExplosion = Sound {
+            Bank = 'Impacts',
+            Cue = 'XSB2305_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'SERAPHIM',
+        'PROJECTILE',
+        'INDIRECTFIRE',
+        'STRATEGIC',
+        'MISSILE',
+        'NOSPLASHDAMAGE',
+    },
+    Defense = {
+        Health = 60,
+        MaxHealth = 60,
+    },
+    Description = 'Seraphim MIRV Nuclear Missile',
+    DesiredShooterCap = 2,
+    Display = {
+        CameraFollowTimeout = 5,
+        CameraFollowsProjectile = true,
+        Mesh = {
+            IconFadeInZoom = 200,
+            LODs = {
+                {
+
+                    LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
+                    ShaderName = 'Seraphim',
+                },
+            },
+        },
+        UniformScale = 0.015,
+    },
+    Economy = {
+        BuildCostEnergy = 7250000,
+        BuildCostMass = 77500,
+        BuildTime = 975000,
+    },
+    General = {
+        Category = 'Missile',
+        EntityCategory = {
+            'SERAPHIM',
+            'PROJECTILE',
+            'INDIRECTFIRE',
+            'STRATEGIC',
+            'MISSILE',
+            'NOSPLASHDAMAGE',
+        },
+        Faction = 'Seraphim',
+    },
+    Interface = {
+        HelpText = 'Seraphim MIRV Nuclear Missile',
+    },
+    Physics = {
+    	DetonateBelowHeight = 120,
+        Acceleration = 3,
+        CollideEntity = false,
+        CollideSurface = false,
+        DestroyOnWater = false,
+        InitialSpeed = 6,
+        Lifetime = 600,
+        MaxSpeed = 60,
+        RotationalVelocity = 100,
+        RotationalVelocityRange = 0,
+        TrackTarget = true,
+        TrackTargetGround = true,
+        TurnRate = 0,
+        UseGravity = false,
+        VelocityAlign = true,
+    },
+    StrategicIconName = '/textures/ui/common/game/unit-over/icon-nuke_bmp.dds',
+}

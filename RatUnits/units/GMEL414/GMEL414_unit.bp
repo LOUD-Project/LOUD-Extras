@@ -126,7 +126,7 @@ UnitBlueprint {
             '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
         },
-        AnimationOpen = '/mods/Antares Unit Pack/units/GMEL414/GMEL414_AOpen.sca',
+        AnimationOpen = '/mods/RatUnits/units/GMEL414/GMEL414_AOpen.sca',
         IdleEffects = {
             Land = {
                 Effects = {
@@ -160,10 +160,10 @@ UnitBlueprint {
                     ShaderName = 'Unit',
                 },
                 {
-                    AlbedoName = '/mods/Antares Unit Pack/units/GMEL414/GMEL414_lod1_albedo.dds',
+                    AlbedoName = '/mods/RatUnits/units/GMEL414/GMEL414_lod1_albedo.dds',
                     LODCutoff = 600,
                     ShaderName = 'Unit',
-                    SpecularName = '/mods/Antares Unit Pack/units/GMEL414/GMEL414_lod1_specteam.dds',
+                    SpecularName = '/mods/RatUnits/units/GMEL414/GMEL414_lod1_specteam.dds',
                 },
             },
         },
@@ -624,7 +624,7 @@ UnitBlueprint {
             Turreted = false,
             WeaponCategory = 'Anti Air',
             WeaponRepackTimeout = 0,
-            WeaponUnpackAnimation = '/mods/Antares Unit Pack/units/GMEL414/GMEL414_AOpen.sca',
+            WeaponUnpackAnimation = '/mods/RatUnits/units/GMEL414/GMEL414_AOpen.sca',
             WeaponUnpackAnimationRate = 1,
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = true,
