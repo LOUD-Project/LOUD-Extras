@@ -56,8 +56,7 @@ UnitBlueprint {
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
-        'BUILTBYTIER3COMMANDER',
-        'BUILTBYTIER3ENGINEER',
+        'BUILTBYTIER4COMMANDER',
         'CYBRAN',
         'MOBILE',
         'NAVAL',
@@ -69,7 +68,7 @@ UnitBlueprint {
         'SUBMERSIBLE',
         'VISIBLETORECON',
         'RECLAIMABLE',
-	'SHOWATTACKRETICLE',
+	    'SHOWATTACKRETICLE',
         'NUKESUB',
         'OVERLAYSONAR',
         'OVERLAYINDIRECTFIRE',

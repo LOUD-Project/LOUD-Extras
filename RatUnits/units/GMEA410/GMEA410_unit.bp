@@ -113,8 +113,7 @@ UnitBlueprint {
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
-        'BUILTBYTIER3COMMANDER',
-        'BUILTBYTIER3ENGINEER',
+        'BUILTBYTIER4COMMANDER',
         'UEF',
         'MOBILE',
         'AIR',

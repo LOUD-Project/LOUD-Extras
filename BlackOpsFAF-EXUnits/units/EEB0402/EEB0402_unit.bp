@@ -29,8 +29,6 @@ UnitBlueprint {
     BuildIconSortPriority = 70,
     Categories = {
         'SELECTABLE',
-        'BUILTBYTIER3ENGINEER',
-        'BUILTBYTIER3COMMANDER',
         'BUILTBYTIER4COMMANDER',
         'UEF',
         'STRUCTURE',
