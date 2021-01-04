@@ -5,7 +5,7 @@
 --**
 --**  Summary  :
 --**
---**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+--**  Copyright ï¿½ 2005 Gas Powered Games, Inc.  All rights reserved.
 --****************************************************************************
 --------------------------------------------------------------------------
 --  Lt_hawkeye's Custom Projectiles
@@ -89,7 +89,7 @@ EXSinglePolyTrailProjectile = Class(EXEmitterProjectile) {
 
     OnCreate = function(self)
         EmitterProjectile.OnCreate(self)
-        if self.PolyTrail != '' then
+        if self.PolyTrail ~= '' then
             CreateTrail(self, -1, self:GetArmy(), self.PolyTrail):OffsetEmitter(0, 0, self.PolyTrailOffset)
         end
     end,
@@ -107,7 +107,7 @@ EXMultiPolyTrailProjectile = Class(EXEmitterProjectile) {
             local NumPolyTrails = table.getn(self.PolyTrails)
             local army = self:GetArmy()
 
-            if self.RandomPolyTrails != 0 then
+            if self.RandomPolyTrails ~= 0 then
                 local index = nil
                 for i = 1, self.RandomPolyTrails do
                     index = math.floor(Random(1, NumPolyTrails))
@@ -136,7 +136,7 @@ EXSingleCompositeEmitterProjectile = Class(EXSinglePolyTrailProjectile) {
 
     OnCreate = function(self)
         SinglePolyTrailProjectile.OnCreate(self)
-        if self.BeamName != '' then
+        if self.BeamName ~= '' then
             CreateBeamEmitterOnEntity(self, -1, self:GetArmy(), self.BeamName)
         end
     end,
@@ -185,7 +185,7 @@ UEFClusterCruise01Projectile = Class(SingleBeamProjectile) {
         local emit = nil
         for k, v in EffectTable do
             emit = CreateEmitterAtEntity(self,army,v)
-            if emit and EffectScale != 1 then
+            if emit and EffectScale ~= 1 then
                 emit:ScaleEmitter(EffectScale or 1)
             end
         end
@@ -244,7 +244,7 @@ UEFCruiseMissile01Projectile = Class(SingleBeamProjectile) {
         local emit = nil
         for k, v in EffectTable do
             emit = CreateEmitterAtEntity(self,army,v)
-            if emit and EffectScale != 1 then
+            if emit and EffectScale ~= 1 then
                 emit:ScaleEmitter(EffectScale or 1)
             end
         end

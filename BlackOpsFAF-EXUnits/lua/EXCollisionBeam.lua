@@ -5,7 +5,7 @@
 --**
 --**  Summary  :
 --**
---**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+--**  Copyright ï¿½ 2005 Gas Powered Games, Inc.  All rights reserved.
 --****************************************************************************
 --
 -- CollisionBeam is the simulation (gameplay-relevant) portion of a beam. It wraps a special effect
@@ -107,7 +107,7 @@ CollisionBeam = Class(moho.CollisionBeamEntity) {
             table.insert(self.BeamEffectsBag, fx)
             self.Trash:Add(fx)
         end
-        if table.getn(self.FxBeam) != 0 then
+        if table.getn(self.FxBeam) ~= 0 then
             local exfxBeam = CreateBeamEmitter(self.FxBeam[Random(1, table.getn(self.FxBeam))], army)
             AttachBeamToEntity(exfxBeam, self, 0, army)
 
@@ -136,7 +136,7 @@ CollisionBeam = Class(moho.CollisionBeamEntity) {
         EffectScale = EffectScale or 1
         for k, v in EffectTable do
             emit = CreateEmitterAtBone(self,1,army,v)
-            if emit and EffectScale != 1 then
+            if emit and EffectScale ~= 1 then
                 emit:ScaleEmitter(EffectScale)
             end
         end
@@ -147,7 +147,7 @@ CollisionBeam = Class(moho.CollisionBeamEntity) {
         for k, v in EffectTable do
             emit = CreateAttachedEmitter(self,1,army,v)
             table.insert(self.TerrainEffectsBag, emit)
-            if emit and EffectScale != 1 then
+            if emit and EffectScale ~= 1 then
                 emit:ScaleEmitter(EffectScale)
             end
         end
@@ -164,7 +164,7 @@ CollisionBeam = Class(moho.CollisionBeamEntity) {
         local pos = self:GetPosition(1)
         local TerrainType = nil
 
-        if self.TerrainImpactType != 'Default' then
+        if self.TerrainImpactType ~= 'Default' then
             TerrainType = GetTerrainType(pos.x,pos.z)
         else
             TerrainType = GetTerrainType(-1, -1)
@@ -172,7 +172,7 @@ CollisionBeam = Class(moho.CollisionBeamEntity) {
 
         local TerrainEffects = TerrainType.FXImpact[TargetType][self.TerrainImpactType] or nil
 
-        if TerrainEffects and (self.LastTerrainType != TerrainType) then
+        if TerrainEffects and (self.LastTerrainType ~= TerrainType) then
             self:DestroyTerrainEffects()
             self:CreateTerrainEffects(self:GetArmy(), TerrainEffects, self.TerrainImpactScale)
             self.LastTerrainType = TerrainType

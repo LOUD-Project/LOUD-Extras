@@ -201,7 +201,7 @@ UnitBlueprint {
     SizeX = 2,
     SizeY = 1.6,
     SizeZ = 2,
-    StrategicIconName = 'experimental',
+    StrategicIconName = 'icon_experimental_structure_nuke',
     StrategicIconSortPriority = 175,
     Veteran = {
         Level1 = 30,

@@ -3,6 +3,19 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 local RandomFloat = import('/lua/utilities.lua').GetRandomFloat
 
 CIFEMPFluxWarhead14 = Class(CEMPFluxWarheadProjectile) {
+    -- Dummy data to keep nuke effect controller from throwing warnings
+    Data = {
+        NukeOuterRingDamage = 1,
+        NukeOuterRingRadius = 2,
+        NukeOuterRingTicks = 1,
+        NukeOuterRingTotalTime = 1,
+
+        NukeInnerRingDamage = 1,
+        NukeInnerRingRadius = 1,
+        NukeInnerRingTicks = 1,
+        NukeInnerRingTotalTime = 1,
+    },
+
     BeamName = '/effects/emitters/missile_exhaust_fire_beam_06_emit.bp',
     FxSplashScale = 0.5,
     FxTrails = {},
@@ -17,7 +30,7 @@ CIFEMPFluxWarhead14 = Class(CEMPFluxWarheadProjectile) {
 
     OnImpact = function(self, TargetType, TargetEntity)
         if not TargetEntity or not EntityCategoryContains(categories.PROJECTILE, TargetEntity) then
-            # Play the explosion sound
+            -- Play the explosion sound
             local myBlueprint = self:GetBlueprint()
             if myBlueprint.Audio.Explosion then
                 self:PlaySound(myBlueprint.Audio.Explosion)
@@ -31,8 +44,8 @@ CIFEMPFluxWarhead14 = Class(CEMPFluxWarheadProjectile) {
         end
 
         local rotation = RandomFloat(0,2*math.pi)
-        #local size = RandomFloat(13,5)
-        
+        --local size = RandomFloat(13,5)
+    
         CreateDecal(self:GetPosition(), rotation, 'scorch_004_albedo', '', 'Albedo', 13, 13, 300, 15, self:GetArmy())
 
         CEMPFluxWarheadProjectile.OnImpact(self, TargetType, TargetEntity)
@@ -56,16 +69,16 @@ CIFEMPFluxWarhead14 = Class(CEMPFluxWarheadProjectile) {
         local launcher = self:GetLauncher()
         self.CreateEffects( self, self.InitialEffects, army, 1 )
         self:TrackTarget(false)
-        WaitSeconds(2.5)		# Height
+        WaitSeconds(2.5) -- Height
         self:SetCollision(true)
         self:SetDestroyOnWater(true)
         self.CreateEffects( self, self.LaunchEffects, army, 1 )
         WaitSeconds(2.5)
         self.CreateEffects( self, self.ThrustEffects, army, 3 )
         WaitSeconds(2.5)
-        self:TrackTarget(true) # Turn ~90 degrees towards target
+        self:TrackTarget(true) -- Turn ~90 degrees towards target
         self:SetTurnRate(47.36)
-        WaitSeconds(2) 					# Now set turn rate to zero so nuke flies straight
+        WaitSeconds(2) -- Now set turn rate to zero so nuke flies straight
         self:SetTurnRate(0)
         self:SetAcceleration(0.001)
         self.WaitTime = 0.5
@@ -77,18 +90,18 @@ CIFEMPFluxWarhead14 = Class(CEMPFluxWarheadProjectile) {
 
     SetTurnRateByDist = function(self)
         local dist = self:GetDistanceToTarget()
-        #Get the nuke as close to 90 deg as possible
+        --Get the nuke as close to 90 deg as possible
         if dist > 150 then        
-            #Freeze the turn rate as to prevent steep angles at long distance targets
+            --Freeze the turn rate as to prevent steep angles at long distance targets
             self:SetTurnRate(0)
         elseif dist > 75 and dist <= 150 then
-						# Increase check intervals
+			-- Increase check intervals
             self.WaitTime = 0.3
         elseif dist > 32 and dist <= 75 then
-						# Further increase check intervals
+			-- Further increase check intervals
             self.WaitTime = 0.1
         elseif dist < 32 then
-						# Turn the missile down
+			-- Turn the missile down
             self:SetTurnRate(50)
         end
     end,
