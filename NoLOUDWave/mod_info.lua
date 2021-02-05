@@ -1,0 +1,10 @@
+name = "No AI Cheatspawns"
+uid = "4d821fe5-4b2a-484c-a81b-318d5381d09f"
+version = 1
+copyright = "© 2019 Sean Wheeldon"
+description = "Prevents LOUD from spawning in air waves."
+author = "Balthazar"
+selectable = true
+enabled = true
+exclusive = false
+ui_only = false
