@@ -86,6 +86,7 @@ UnitBlueprint {
         Abilities = {
             '<LOC ability_aa>Anti-Air',
             '<LOC ability_torpedo>Torpedoes',
+            '<LOC ability_sonar>Sonar',
             '<LOC ability_submersible>Submersible',
         },
         IdleEffects = {
@@ -93,8 +94,6 @@ UnitBlueprint {
                 Effects = {
                     {
                         Bones = {
-                            'Right_Projectile',
-                            'Turret',
                             'URS0303',
                         },
                         Type = 'UnderWater01',
@@ -175,7 +174,7 @@ UnitBlueprint {
                 Effects = {
                     {
                         Bones = {
-                            'Exhaust',
+                            'Back_Wake',
                         },
                         Scale = 2,
                         Type = 'BackWake',
@@ -186,21 +185,21 @@ UnitBlueprint {
                 Effects = {
                     {
                         Bones = {
-                            'Left_Projectile',
+                            'Front_Left_Wake',
                         },
                         Scale = 0.7,
                         Type = 'LeftFrontWake',
                     },
                     {
                         Bones = {
-                            'Right_Projectile',
+                            'Front_Right_Wake',
                         },
                         Scale = 0.7,
                         Type = 'RightFrontWake',
                     },
                     {
                         Bones = {
-                            'Exhaust',
+                            'Back_Wake',
                         },
                         Offset = {
                             0,
