@@ -1,5 +1,5 @@
--- Rat_CustomUnits.lua
 -- Author: Rat Circus
+-- Brief: Custom unit support for the LOUD AI.
 
 UnitList = {
 	-- I know this seems like nonsense but the Ennui isn't supposed
@@ -9,6 +9,7 @@ UnitList = {
 	},
 
 	T3SeaNukeSub = {
+		-- MIRV subs
 		Aeon = {'exuas0304', 50},
 		UEF = {'tbu0031', 50},
 		Cybran = {'gmrs401', 50},
@@ -19,8 +20,12 @@ UnitList = {
 	},
 
 	T4AirExperimental1 = {
-        UEF = {'brnat3bomber',100}, -- Havoc  
+        UEF = {'brnat3bomber', 100}, -- Havoc  
     },
+
+	T4AirExperimental2 = {
+		UEF = {'oea0401', 50} -- AC-500 Terror
+	},
 
 	T4Artillery = {
 		-- MIRVs
