@@ -24,34 +24,20 @@ GMRS302 = Class(CSubUnit) {
         TorpedoBB = Class(CANNaniteTorpedoWeapon) {},
         TorpedoBBB = Class(CANNaniteTorpedoWeapon) {},
     },
---    OnStopBeingBuilt = function(self, builder, layer)
---        CSubUnit.OnStopBeingBuilt(self,builder,layer)
---        if(self:GetCurrentLayer() == 'Water') then
---			-- Enable weapon
---			self:SetWeaponEnabledByLabel('MainGun', true)
---        elseif (self:GetCurrentLayer() == 'UnderWater') then
---			-- Disable Weapon
---			self:SetWeaponDisableByLabel('MainGun', false)
---       end
---       self.WeaponsEnabled = true
---    end,
+
 	OnLayerChange = function(self, new, old)
 		CSubUnit.OnLayerChange(self, new, old)
 		if self.WeaponsEnabled then
-			if( new == 'Water' ) then
-				-- Enable Minigun
-				self:SetWeaponEnabledByLabel('MainGun', true)
+			if ( new == 'Water' ) then
 				self:SetWeaponEnabledByLabel('AAGunFL', true)
 				self:SetWeaponEnabledByLabel('AAGunFR', true)
 				self:SetWeaponEnabledByLabel('AAGunBL', true)
 				self:SetWeaponEnabledByLabel('AAGunBR', true)
 			elseif ( new == 'UnderWater' ) then
-				-- Disable Land Minigun
-				self:SetWeaponDisableByLabel('MainGun', false)
-				self:SetWeaponDisableByLabel('AAGunFL', false)
-				self:SetWeaponDisableByLabel('AAGunFR', false)
-				self:SetWeaponDisableByLabel('AAGunBL', false)
-				self:SetWeaponDisableByLabel('AAGunBR', false)
+				self:SetWeaponEnabledByLabel('AAGunFL', false)
+				self:SetWeaponEnabledByLabel('AAGunFR', false)
+				self:SetWeaponEnabledByLabel('AAGunBL', false)
+				self:SetWeaponEnabledByLabel('AAGunBR', false)
 			end
 		end
 	end,
