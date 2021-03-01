@@ -9,15 +9,6 @@
 --****************************************************************************
 
 UnitList = {
-
-            --Tech 1 Buildings    *********************************************
-
-            --Tech 2 Buildings    *********************************************
-
-            --Tech 3 Buildings    *********************************************
-
-            --Tech 4 Buildings    *********************************************
-
             T3LandBot = {
                 Cybran = {'erl0301', 50}, -- Name: <LOC ERL0301_name>Shadow Splitter (<LOC ERL0301_desc>Cloaked Bot)
             },
@@ -29,9 +20,6 @@ UnitList = {
             T3ArmoredAssault = {
                 Aeon = {'eal0301', 50}, -- Name: Faithbreaker (Teleport Harassment Bot)
             },
-            T4EconExperimental = {
-                UEF = {'eeb0402', 50}, -- Name: Philadelphia (<LOC EEB0402_desc>Stellar Generator)
-            },
 
             T4LandExperimental3 = {
                 UEF = {'eel0401', 50}, -- Name: Bushwhacker (Experimental Harmonic Wave Generator)
@@ -42,5 +30,4 @@ UnitList = {
             T4LandExperimental1 = {
                 UEF = {'eel0401', 50}, -- Name: Bushwhacker (Experimental Harmonic Wave Generator)
             },
-
 }

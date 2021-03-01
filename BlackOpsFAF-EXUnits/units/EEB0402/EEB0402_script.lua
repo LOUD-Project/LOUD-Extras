@@ -5,18 +5,17 @@
 --**
 --**  Summary  :  UEF T4 Stellar Generator Script
 --**
---**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+--**  Copyright ï¿½ 2005 Gas Powered Games, Inc.  All rights reserved.
 --****************************************************************************
 
 local TEnergyCreationUnit = import('/lua/terranunits.lua').TEnergyCreationUnit
 local TerranWeaponFile = import('/lua/terranweapons.lua')
-local DeathNukeWeapon = import('/lua/sim/defaultweapons.lua').DeathNukeWeapon
-
+local AIFParagonDeathWeapon = import('/lua/aeonweapons.lua').AIFParagonDeathWeapon
 
 EEB0402 = Class(TEnergyCreationUnit) {
 
     Weapons = {
-        DeathWeapon = Class(DeathNukeWeapon) {},
+        DeathWeapon = Class(AIFParagonDeathWeapon) {},
     },
 
     OnStopBeingBuilt = function(self,builder,layer)
