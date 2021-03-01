@@ -17,12 +17,15 @@ Rat_4D = {
 		'xel0308', -- Hermes
 		-- Cybran
 		'urb2306', -- Beholder
+		'url0305', -- Crawfish
 
 		-- T4
 		-- Aeon
 		'ual0402', -- Overlord
 		-- UEF
 		'uel0402', -- Rampage
+		'bea0403', -- Citadel Mk. I
+		'bea0402', -- Citadel Mk. II
 	}
 }
 
@@ -70,9 +73,11 @@ Rat_LOUD = {
 	values = {
 		-- T4
 		-- UEF
-		'veb2303', -- Flayer II
+		'veb2302', -- Flayer II
 		-- Cybran
 		'wrl0404', -- Megaroach
+		-- Seraphim
+		'wsl0405', -- Echibum
 	},
 }
 
@@ -81,6 +86,7 @@ Rat_TM = {
 	combo = 'TM',
 	mod = '62e2j64a-53a2-y6sg-32h5-146as555a18u3',
 	values = {
+		-- T1
 		-- Aeon
 		'brot1mt', -- Bonfire
 		'brot1bt', -- Hervour
@@ -89,10 +95,12 @@ Rat_TM = {
 		'brot1hpd', -- Zpyker
 		-- UEF
 		'brnt1hpd', -- Thug
+		'brnt1expd',  -- Mayor
 		-- Cybran
 		'brmt1exm1', -- Proton
 		'brmt1pd', -- SlyFox
-		'brm1expdt2', -- Dual Pen
+		'brmt1expd', -- Pen
+		'brmt1expdt2', -- Dual Pen
 		-- Sera
 		'brpt1pd', -- Hetula-Uttaus
 		'brpt1exm1', -- Othazyne
@@ -168,7 +176,7 @@ RAT_Wyvern = {
 		'wel0302', -- Wrecker
 		-- Cybran
 		'wrl0309', -- Python
-		'wrl0305', -- Sealion
+		'wrl0301', -- Sealion
 		-- Sera
 		'wsl0308', -- Otheeka
 
@@ -179,6 +187,7 @@ RAT_Wyvern = {
 		-- UEF
 		'wel1409', -- Fatboy II
 		'wel4404', -- Star Adder
+		'wel0416', -- Dragonite
 		-- Cybran
 		'wrl1466', -- Storm Strider
 		-- Sera
