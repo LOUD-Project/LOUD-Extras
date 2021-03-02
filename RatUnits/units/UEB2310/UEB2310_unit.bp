@@ -34,7 +34,6 @@ UnitBlueprint {
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
-        'BUILTBYTIER3ENGINEER',
         'BUILTBYTIER3COMMANDER',
         'UEF',
         'STRUCTURE',
@@ -154,7 +153,7 @@ UnitBlueprint {
     SizeX = 8,
     SizeY = 5,
     SizeZ = 8,
-    StrategicIconName = 'icon_structure3_artillery',
+    StrategicIconName = 'icon_experimental_structure_artillery',
     StrategicIconSortPriority = 175,
     Veteran = {
         Level1 = 30,
@@ -197,8 +196,8 @@ UnitBlueprint {
             DamageType = 'Normal',
             DisplayName = 'Gauss Cannon',
             EnergyChargeForFirstShot = false,
-            EnergyDrainPerSecond = 7000,
-            EnergyRequired = 14000,
+            EnergyDrainPerSecond = 19714,
+            EnergyRequired = 138000, -- fires after a 7 second charge
             FireTargetLayerCapsTable = {
                 Land = 'Land|Water|Seabed',
                 Water = 'Land|Water|Seabed',
