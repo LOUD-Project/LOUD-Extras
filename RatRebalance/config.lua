@@ -95,4 +95,14 @@ config = {
 			},
 		}
 	},
+	{
+		default = 1,
+		label = 'Enable Archimedes',
+		key = 'Archimedes',
+		help = "Allow the Archimedes UEF Mobile Satellite Uplink from BrewLAN to be built.",
+		values = {
+			{ text = "Off", key = 'off', },
+			{ text = "On", key = 'on', },
+		},
+	},
 }
