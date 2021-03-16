@@ -149,12 +149,6 @@ UnitBlueprint {
         },
         FactionName = 'UEF',
         Icon = 'amph',
-        OrderOverrides = {
-            RULEUCC_Nuke = {
-                bitmapId = 'nuke',
-                helpText = 'end_nuke',
-            },
-        },
         SelectionPriority = 5,
         TechLevel = 'RULEUTL_Experimental',
         UnitName = '<LOC GMEB420_name>Ares Soul',
