@@ -103,13 +103,13 @@ UnitBlueprint {
             IconFadeInZoom = 130,
             LODs = {
                 {
-                    LODCutoff = 100,
+                    LODCutoff = 400,
                     Scrolling = true,
                     ShaderName = 'Aeon',
                 },
                 {
                     AlbedoName = 'GMAB407_lod1_albedo.dds',
-                    LODCutoff = 215,
+                    LODCutoff = 800,
                     ShaderName = 'Aeon',
                     SpecularName = 'GMAB407_lod1_specteam.dds',
                 },

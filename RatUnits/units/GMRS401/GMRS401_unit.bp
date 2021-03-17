@@ -102,8 +102,8 @@ UnitBlueprint {
                         Bones = {
                             'Torpedo_Left01',
                             'Torpedo_Left02',
-			    'Torpedo_Right01',
-			    'Torpedo_Right02',
+                            'Torpedo_Right01',
+                            'Torpedo_Right02',
                             'TBC0009',
                             'Exhaust_Right',
                             'Exhaust_Left',
@@ -118,8 +118,8 @@ UnitBlueprint {
                         Bones = {
                             'Torpedo_Left01',
                             'Torpedo_Left02',
-			    'Torpedo_Right01',
-			    'Torpedo_Right02',
+                            'Torpedo_Right01',
+                            'Torpedo_Right02',
                             'TBC0009',
                             'Exhaust_Right',
                             'Exhaust_Left',
@@ -139,12 +139,12 @@ UnitBlueprint {
             IconFadeInZoom = 170,
             LODs = {
                 {
-                    LODCutoff = 100,
+                    LODCutoff = 400,
                     ShaderName = 'Insect',
                 },
                 {
                     AlbedoName = 'GMRS401_lod1_albedo.dds',
-                    LODCutoff = 215,
+                    LODCutoff = 800,
                     ShaderName = 'Insect',
                     SpecularName = 'GMRS401_lod1_specteam.dds',
                 },
@@ -157,8 +157,8 @@ UnitBlueprint {
                         Bones = {
                             'Torpedo_Left01',
                             'Torpedo_Left02',
-			    'Torpedo_Right01',
-			    'Torpedo_Right02',
+                            'Torpedo_Right01',
+                            'Torpedo_Right02',
                             'TBC0009',
                             'Exhaust_Right',
                             'Exhaust_Left',
@@ -173,8 +173,8 @@ UnitBlueprint {
                         Bones = {
                             'Torpedo_Left01',
                             'Torpedo_Left02',
-			    'Torpedo_Right01',
-			    'Torpedo_Right02',
+                            'Torpedo_Right01',
+                            'Torpedo_Right02',
                             'TBC0009',
                             'Exhaust_Right',
                             'Exhaust_Left',
@@ -234,7 +234,7 @@ UnitBlueprint {
         },
         PlaceholderMeshName = 'TBC0009',
         SpawnRandomRotation = true,
-        UniformScale = 0.20,
+        UniformScale = 0.08,
     },
     Economy = {
         BuildCostEnergy = 975000,
@@ -305,12 +305,12 @@ UnitBlueprint {
         TurnRadius = 50,
         TurnRate = 20,
     },
-    SelectionSizeX = 5,
-    SelectionSizeZ = 20,
-    SelectionThickness = 0.2,
-    SizeX = 10,
-    SizeY = 8 ,
-    SizeZ = 16,
+    SelectionSizeX = 2,
+    SelectionSizeZ = 7.5,
+    SelectionThickness = 0.14,
+    SizeX = 1.8,
+    SizeY = 1.5,
+    SizeZ = 9.5,
     StrategicIconName = 'icon_experimental_sub_nuke',
     StrategicIconSortPriority = 145,
     Veteran = {
@@ -353,7 +353,7 @@ UnitBlueprint {
                 {
                     MuzzleBones = {
                         'Torpedo_Right01',
-			'Torpedo_Right02',
+			            'Torpedo_Right02',
                     },
                     RackBone = 'Torpedo_Right01',
                 },
@@ -413,7 +413,7 @@ UnitBlueprint {
                 {
                     MuzzleBones = {
                         'Torpedo_Left01',
-			'Torpedo_Left02',
+			            'Torpedo_Left02',
                     },
                     RackBone = 'Torpedo_Left01',
                 },
@@ -706,7 +706,7 @@ UnitBlueprint {
 				},
             },
             RangeCategory = 'UWRC_IndirectFire',
-	    RackFireTogether = false,
+	        RackFireTogether = false,
             RackRecoilDistance = 0,
             RackReloadTimeout = 10,
             RackSalvoChargeTime = 0,
@@ -726,7 +726,7 @@ UnitBlueprint {
             Turreted = false,
             WeaponCategory = 'Missile',
         },
-	{
+	    {
             CollideFriendly = false,
             Damage = 0,
             DamageFriendly = true,

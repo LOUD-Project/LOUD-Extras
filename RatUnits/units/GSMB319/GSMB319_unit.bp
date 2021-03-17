@@ -84,17 +84,17 @@ UnitBlueprint {
     Display = {
         Abilities = {
             '<LOC ability_manuallaunch>Manual Launch',
-	    '<LOC ability_volatile>Volatile',
-	    '<LOC ability_deathbang>Explodes on Death',
+	        '<LOC ability_volatile>Volatile',
+	        '<LOC ability_deathbang>Explodes on Death',
         },
         Mesh = {
             IconFadeInZoom = 200,
             LODs = {
                 {
-		    AlbedoName = '/units/XSB2401/XSB2401_Albedo.dds',
-		    NormalsName = '/units/XSB2401/XSB2401_NormalsTS.DDS',
-		    SpecularName = '/units/XSB2401/XSB2401_SpecTeam.dds',
-                    LODCutoff = 300,
+                    AlbedoName = '/units/XSB2401/XSB2401_Albedo.dds',
+                    NormalsName = '/units/XSB2401/XSB2401_NormalsTS.DDS',
+                    SpecularName = '/units/XSB2401/XSB2401_SpecTeam.dds',
+                    LODCutoff = 800,
                     LookupName = '/textures/environment/Falloff_seraphim_lookup.dds',
                     Scrolling = true,
                     ShaderName = 'Seraphim',
