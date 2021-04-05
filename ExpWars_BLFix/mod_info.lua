@@ -1,0 +1,15 @@
+name = "Experimental Wars"
+uid = "e403c941-1faa-42a5-bcce-4762af26140aBLFIX"
+version = 2
+description = "A stripped down, compatible version. Doesn't include the ACUs, vet research, sub factories, or UI changes."
+author = "Asdrubaelvect, Manimal, Balthazar"
+icon = "/Mods/ExpWars_BLFix/WhyAmIDoingThis.png"
+selectable = true
+enabled = true
+exclusive = false
+ui_only = false
+requires = { }
+requiresNames = { }
+conflicts = { }
+before = { }
+after = { }
